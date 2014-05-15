@@ -4,5 +4,10 @@
     "type": "oxid-module",
     "require": {
         "php": ">=5.4"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "ln -sf ../application/views/oxid-demo-theme/skin/oxid-demo-skin out/oxid-demo-skin"
+        ]
     }
 }
